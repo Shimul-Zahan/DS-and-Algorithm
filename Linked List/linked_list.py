@@ -11,7 +11,11 @@ class LinkedList:
         self.head = new_node
         self.tail = new_node
         self.length = 1
-        
+    
+    # Create methods
+    def append(self, value):     
+    def prepend(self, value):     
+    def inser(self, value):     
 
 # create a object for LinkedList class
 my_linked_list = LinkedList(5)
