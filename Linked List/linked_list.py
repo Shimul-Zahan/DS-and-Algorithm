@@ -108,6 +108,17 @@ class LinkedList:
         self.length -= 1
         return True
     
+    def reverse(self):
+        temp = self.head
+        self.head = self.tail
+        self.tail = temp
+        after = temp.next
+        before = None
+        for _ in range(self.length):
+            after = temp.next
+            temp.next = before
+            before = temp
+            temp = after
     
 # create a object for LinkedList class
 my_linked_list = LinkedList(0)
@@ -116,10 +127,11 @@ for i in range(0, 5):
         continue
     my_linked_list.append(i+1)
     
+my_linked_list.reverse()  
 my_linked_list.print_list()
-my_linked_list.remove(3)
+# my_linked_list.remove(3)
 # my_linked_list.inser(2, 30)
-my_linked_list.print_list()
+# my_linked_list.print_list()
 # index = 5
 # print(f'Index {index} element:', my_linked_list.get(index))
 
