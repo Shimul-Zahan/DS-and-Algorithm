@@ -70,8 +70,43 @@ class LinkedList:
         if self.length == 0:
             self.tail = None
         return temp.value
-        
-    # def inser(self, value): 
+    
+    def get(self, index): 
+        if index < 0 or index >= self.length :
+            return None 
+        temp = self.head 
+        for _ in range(index):
+            temp = temp.next
+        return temp
+    
+    
+    def inser(self, index, value): 
+        if index < 0 or index >= self.length:
+            return False
+        if index == 0:
+            return self.prepend(value)
+        if index == self.length:
+            return self.append(value)
+        new_node = Node(value)
+        temp = self.get(index-1)
+        new_node.next = temp.next
+        temp.next = new_node
+        self.length += 1
+        return True
+    
+    def remove(self, index):
+        if index < 0 or index >= self.length:
+            return False
+        if index == 0:
+            return self.pop_first()
+        if index == self.length - 1 :
+            return self.pop()
+        prev = self.get(index - 1)
+        temp = prev.next
+        prev.next = temp.next
+        temp.next = None
+        self.length -= 1
+        return True
     
     
 # create a object for LinkedList class
@@ -81,9 +116,16 @@ for i in range(0, 5):
         continue
     my_linked_list.append(i+1)
     
-my_linked_list.pop_first()
-
 my_linked_list.print_list()
+my_linked_list.remove(3)
+# my_linked_list.inser(2, 30)
+my_linked_list.print_list()
+# index = 5
+# print(f'Index {index} element:', my_linked_list.get(index))
+
+    
+# my_linked_list.pop_first()
+
 
 # my_linked_list.prepend(-1)
 # my_linked_list.print_list()
