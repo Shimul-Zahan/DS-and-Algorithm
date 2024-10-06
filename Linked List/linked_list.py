@@ -19,6 +19,22 @@ class LinkedList:
             print(temp.value)
             temp = temp.next    
 
+    # printing the linked list
+    def pop(self):
+        if self.length == 0 :
+            return None
+        temp = self.head
+        pre = self.head
+        while(temp.next is not None):
+            pre = temp
+            temp = temp.next
+        self.tail = pre
+        self.tail.next = None
+        self.length -= 1
+        if self.length == 0:
+            self.head = None
+            self.tail = None  
+        return temp.value    
         
     # Create methods
     def append(self, value): 
@@ -46,3 +62,10 @@ for i in range(0, 5):
     my_linked_list.append(i+1)
 
 my_linked_list.print_list()
+print('\n popped item',my_linked_list.pop())
+print('\n popped item',my_linked_list.pop())
+print('\n popped item',my_linked_list.pop())
+print('\n popped item',my_linked_list.pop())
+print('\n popped item',my_linked_list.pop())
+print('\n popped item',my_linked_list.pop())
+print('\n popped item',my_linked_list.pop())
