@@ -9,3 +9,4 @@
 - [Hash Table](./Hash%20Table)
 - [Recursion](./Recursion)
 - [Tree](./Tree)
+- [Tree](./Heap)
