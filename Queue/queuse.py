@@ -51,4 +51,3 @@ queue.enqueue(50)
 print("Deque : ", queue.dequeue())
 print("Deque : ", queue.dequeue())
 queue.print()
-            
