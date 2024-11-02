@@ -10,3 +10,4 @@
 - [Recursion](./Recursion)
 - [Tree](./Tree)
 - [Heap](./Heap)
+- [Search](./Search)
