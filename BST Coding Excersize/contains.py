@@ -6,7 +6,7 @@ def contains(self, value):
     """This function is responsible for search the value is in the tree or not"""
     
     if self.root is None:
-            return False
+        return False
         
     temp = self.root
     while temp:
