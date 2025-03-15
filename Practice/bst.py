@@ -44,6 +44,9 @@ class BinaryTree:
         if self.root is not None:
             self.inorder(self.root.left)
             print()
+            
+            
+    # Here we implement all the tree traversal
                 
                 
 my_tree=BinaryTree()
