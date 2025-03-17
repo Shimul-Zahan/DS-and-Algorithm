@@ -26,9 +26,3 @@ This repository is a comprehensive collection of **Data Structures** and **Algor
 - Build a solid foundation in data structures and algorithms.
 - Serve as a reference for coding interviews and technical assessments.
 - Provide hands-on practice and insights for each data structure and algorithm.
-
----
-
-Feel free to explore, clone, and contribute to this repository. Let's strengthen our foundations in Data Structures and Algorithms together!
-
-**Happy Learning!**
