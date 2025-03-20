@@ -18,7 +18,17 @@ def dfs_preorder(self):
     return result
 
 def dfs_inorder(self):
-    pass
+    current_node = self.root
+    result = []
+    def traversal(current_node):
+        if current_node.left:
+            traversal(current_node.left)
+        result.append(current_node.value)
+        if current_node.right:
+            traversal(current_node.right)
+        
+    traversal(self.root)
+    return result
     
 
 def dfs_postorder(self):
