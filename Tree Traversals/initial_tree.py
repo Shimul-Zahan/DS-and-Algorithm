@@ -29,12 +29,7 @@ class BinarySearchTree:
                     return True
                 temp = temp.right
                 
-bst = BinarySearchTree()
-bst.insert(10)
-bst.insert(5)
-bst.insert(15)
-bst.insert(2)
-bst.insert(7)
+
 
                 
                 
