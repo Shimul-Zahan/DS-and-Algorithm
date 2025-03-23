@@ -34,7 +34,7 @@ class BinaryTree:
                 print("Append to the  right node")
                 queue.append(temp.right)
     
-    def bredth_first_searc(self):
+    def bredth_first_search(self):
         current_node = self.root
         queue = []
         result = []
@@ -56,7 +56,7 @@ bt.insert(2)
 bt.insert(3)
 bt.insert(4)
 bt.insert(5)
-print("Level Order Traversal:", bt.bredth_first_searc())
+print("Level Order Traversal:", bt.bredth_first_search())
 # Level Order Traversal:
 # 1 2 3 4 5
 
